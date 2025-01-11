@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #map {
+            height: 500px; /* Adjust height as needed */
+            width: 100%; /* Full width */
+        }
+        #search-box {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Destinations</h1>
+    </header>
+
+    <main>
+        <div id="search-box">
+            <input id="place-input" type="text" placeholder="Search for a destination">
+            <button id="search-button">Search</button>
+        </div>
+        <iframe id="map" src="" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </main>
+
+    <script>
+        document.getElementById('search-button').addEventListener('click', () => {
+            const placeInput = document.getElementById('place-input').value;
+            const mapFrame = document.getElementById('map');
+            const formattedPlace = encodeURIComponent(placeInput); // Encode the input for the URL
+            const src = "https://maps.googleapis.com/maps/api/js?sensor=false&callback=myMap";
+
+           
+            mapFrame.src = src;
+        });
+    </script>
+</body>
+</html>

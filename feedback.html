@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Journal Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Feedback</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><u>Home</u></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="feedback">
+            <h2>Write your feedback...</h2>
+            <form action="feedback.php" method="get">
+                <input type="textarea" name="textarea" id="feedback" required style="height: auto; width:400px" >
+                <div class="rating">
+                    <span onclick="rateExperience(1)">★</span>
+                    <span onclick="rateExperience(2)">★</span>
+                    <span onclick="rateExperience(3)">★</span>
+                    <span onclick="rateExperience(4)">★</span>
+                    <span onclick="rateExperience(5)">★</span>
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+ 
+</body>
+ </html>
