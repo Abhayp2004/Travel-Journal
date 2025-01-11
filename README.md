@@ -2,6 +2,7 @@
 Welcome to the Travel Journal Website project! This is a platform designed to help users share and document their travel experiences. With this website, users can create and browse travel journals, explore famous journals, and learn about various travel destinations.
 
 Features
+
 Get Started: A landing page that introduces users to the website and gives them the option to write their own journals or explore other travel journals.
 Famous Travel Journals: A section where users can read some famous travel journals for inspiration.
 Write Your Own Journal: A page where users can write and publish their travel stories.
